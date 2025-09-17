@@ -1,0 +1,17 @@
+name: CI_pipeline
+
+on: 
+  push:
+   branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  steps:
+    - name: Checkout_code
+      uses: actions/checkout@v5
+    - name:  Setup_go
+      uses: actions/setup-go@v6
+      run: go version
+    - name: build
+      run: go build ./...
