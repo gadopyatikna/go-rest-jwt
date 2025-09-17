@@ -12,6 +12,7 @@ jobs:
         uses: actions/checkout@v5
       - name:  Setup_go
         uses: actions/setup-go@v6
+      - name: Print_version
         run: go version
       - name: build
         run: go build ./...
