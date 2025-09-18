@@ -11,4 +11,4 @@ jobs:
       - name: Checkout_code
         uses: actions/checkout@v5
       - name:  build
-        uses: example.com/go-sample-action@v1
+        uses: gadopyatikna/go-sample-action@v1
