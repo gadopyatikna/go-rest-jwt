@@ -1,0 +1,12 @@
+name: "My Go Action"
+description: "Runs a custom Go tool inside a container"
+author: "you"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+inputs:
+  message:
+    description: "Message to print"
+    required: true
